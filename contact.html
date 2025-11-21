@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechProduct</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%234a90e2'/%3E%3Cpath d='M30 30 L50 20 L70 30 L70 50 L50 60 L30 50 Z' fill='white'/%3E%3Cpath d='M30 50 L50 60 L50 80 L30 70 Z' fill='%23ffffff' opacity='0.8'/%3E%3Cpath d='M50 60 L70 50 L70 70 L50 80 Z' fill='%23ffffff' opacity='0.6'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-cube"></i>
+                        <span>TechProduct</span>
+                    </a>
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+                <button class="cta-btn header-cta" onclick="window.location.href='contact.html'">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header page-header-contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team. We're here to help!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2 style="text-align: center;">Send us a Message</h2>
+                    <p style="text-align: center;">Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name <span style="color: var(--accent-color);">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span style="color: var(--accent-color);">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject <span style="color: var(--accent-color);">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="sales">Sales</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span style="color: var(--accent-color);">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 style="text-align: center;">Get in Touch</h2>
+                    <p style="text-align: center;">We're here to help answer your questions and assist with your technology needs.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Tech Street<br>San Francisco, CA 94105<br>United States</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>Main: <a href="tel:+15551234567">+1 (555) 123-4567</a><br>Toll Free: <a href="tel:+18001234567">+1 (800) 123-4567</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>General: <a href="mailto:info@techproduct.com">info@techproduct.com</a><br>Support: <a href="mailto:support@techproduct.com">support@techproduct.com</a><br>Sales: <a href="mailto:sales@techproduct.com">sales@techproduct.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Support Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM PST<br>Saturday: 10:00 AM - 4:00 PM PST<br>Sunday: Closed<br><br><strong>24/7 Emergency Support</strong> for Enterprise customers</p>
+                        </div>
+                    </div>
+
+                    <div class="social-icons" style="margin-top: 2rem;">
+                        <h3 style="margin-bottom: 1rem;">Follow Us</h3>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-wrapper">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-light); border-radius: 10px;">
+                    <div style="text-align: center; color: var(--text-light);">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"></i>
+                        <p>Google Maps Integration</p>
+                        <p style="font-size: 0.9rem;">Replace this placeholder with your Google Maps embed code</p>
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem;">123 Tech Street, San Francisco, CA 94105</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cube"></i>
+                        <span>TechProduct</span>
+                    </div>
+                    <p>Innovative tech solutions for modern businesses. Transform your workflow today.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Documentation</a></li>
+                        <li><a href="blog.html">Tutorials</a></li>
+                        <li><a href="blog.html">API Reference</a></li>
+                        <li><a href="blog.html">Community</a></li>
+                        <li><a href="blog.html">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@techproduct.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM PST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechProduct. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

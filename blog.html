@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TechProduct</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%234a90e2'/%3E%3Cpath d='M30 30 L50 20 L70 30 L70 50 L50 60 L30 50 Z' fill='white'/%3E%3Cpath d='M30 50 L50 60 L50 80 L30 70 Z' fill='%23ffffff' opacity='0.8'/%3E%3Cpath d='M50 60 L70 50 L70 70 L50 80 Z' fill='%23ffffff' opacity='0.6'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-cube"></i>
+                        <span>TechProduct</span>
+                    </a>
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+                <button class="cta-btn header-cta" onclick="window.location.href='contact.html'">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header page-header-blog">
+        <div class="container">
+            <h1>Our Blog</h1>
+            <p>Latest insights, tips, and updates from TechProduct</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="blog-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search blog posts...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active">All Posts</button>
+                    <button class="filter-tab">Technology</button>
+                    <button class="filter-tab">Business</button>
+                    <button class="filter-tab">Tutorials</button>
+                    <button class="filter-tab">News</button>
+                </div>
+            </div>
+            <div class="blog-layout">
+                <div class="blog-list">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                                <span><i class="fas fa-user"></i> John Doe</span>
+                                <span><i class="fas fa-tag"></i> Technology</span>
+                            </div>
+                            <h3><a href="blog-details.html">The Future of Cloud Computing: Trends to Watch in 2024</a></h3>
+                            <p>Discover the latest trends shaping the cloud computing landscape and how they impact businesses of all sizes.</p>
+                            <a href="blog-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background: url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                                <span><i class="fas fa-user"></i> Jane Smith</span>
+                                <span><i class="fas fa-tag"></i> Security</span>
+                            </div>
+                            <h3><a href="blog-details.html">Cybersecurity Best Practices for Modern Businesses</a></h3>
+                            <p>Learn essential cybersecurity strategies to protect your business from evolving threats in the digital age.</p>
+                            <a href="blog-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                                <span><i class="fas fa-user"></i> Mike Brown</span>
+                                <span><i class="fas fa-tag"></i> Business</span>
+                            </div>
+                            <h3><a href="blog-details.html">How Digital Transformation Drives Business Growth</a></h3>
+                            <p>Explore how embracing digital transformation can accelerate growth and improve operational efficiency.</p>
+                            <a href="blog-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> February 28, 2024</span>
+                                <span><i class="fas fa-user"></i> Sarah Wilson</span>
+                                <span><i class="fas fa-tag"></i> Tutorials</span>
+                            </div>
+                            <h3><a href="blog-details.html">Getting Started with Cloud Migration: A Step-by-Step Guide</a></h3>
+                            <p>A comprehensive guide to migrating your infrastructure to the cloud with minimal disruption.</p>
+                            <a href="blog-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> February 20, 2024</span>
+                                <span><i class="fas fa-user"></i> John Doe</span>
+                                <span><i class="fas fa-tag"></i> Technology</span>
+                            </div>
+                            <h3><a href="blog-details.html">Data Analytics: Unlocking Business Insights</a></h3>
+                            <p>Learn how to leverage data analytics to make informed decisions and drive business success.</p>
+                            <a href="blog-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="fas fa-calendar"></i> February 15, 2024</span>
+                                <span><i class="fas fa-user"></i> Jane Smith</span>
+                                <span><i class="fas fa-tag"></i> Mobile</span>
+                            </div>
+                            <h3><a href="blog-details.html">Mobile-First Development: Why It Matters</a></h3>
+                            <p>Understanding the importance of mobile-first design and development in today's digital landscape.</p>
+                            <a href="blog-details.html">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Search</h3>
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Technology <span>(12)</span></a></li>
+                            <li><a href="#">Business <span>(8)</span></a></li>
+                            <li><a href="#">Security <span>(6)</span></a></li>
+                            <li><a href="#">Tutorials <span>(10)</span></a></li>
+                            <li><a href="#">News <span>(5)</span></a></li>
+                            <li><a href="#">Mobile <span>(4)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Recent Posts</h3>
+                        <ul class="category-list">
+                            <li><a href="blog-details.html">The Future of Cloud Computing</a></li>
+                            <li><a href="blog-details.html">Cybersecurity Best Practices</a></li>
+                            <li><a href="blog-details.html">Digital Transformation Guide</a></li>
+                            <li><a href="blog-details.html">Cloud Migration Tutorial</a></li>
+                            <li><a href="blog-details.html">Data Analytics Insights</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>Tags</h3>
+                        <div class="tag-list">
+                            <a href="#">Cloud</a>
+                            <a href="#">Security</a>
+                            <a href="#">Business</a>
+                            <a href="#">Technology</a>
+                            <a href="#">Tutorial</a>
+                            <a href="#">Data</a>
+                            <a href="#">Mobile</a>
+                            <a href="#">Development</a>
+                            <a href="#">Analytics</a>
+                            <a href="#">Tips</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cube"></i>
+                        <span>TechProduct</span>
+                    </div>
+                    <p>Innovative tech solutions for modern businesses. Transform your workflow today.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Documentation</a></li>
+                        <li><a href="blog.html">Tutorials</a></li>
+                        <li><a href="blog.html">API Reference</a></li>
+                        <li><a href="blog.html">Community</a></li>
+                        <li><a href="blog.html">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@techproduct.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM PST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechProduct. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - TechProduct</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%234a90e2'/%3E%3Cpath d='M30 30 L50 20 L70 30 L70 50 L50 60 L30 50 Z' fill='white'/%3E%3Cpath d='M30 50 L50 60 L50 80 L30 70 Z' fill='%23ffffff' opacity='0.8'/%3E%3Cpath d='M50 60 L70 50 L70 70 L50 80 Z' fill='%23ffffff' opacity='0.6'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-cube"></i>
+                        <span>TechProduct</span>
+                    </a>
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index2.html">Home 2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </nav>
+                <button class="cta-btn header-cta" onclick="window.location.href='contact.html'">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header page-header-services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive technology solutions for your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="services-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search services...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Services</button>
+                    <button class="filter-tab" data-filter="cloud">Cloud Solutions</button>
+                    <button class="filter-tab" data-filter="development">Development</button>
+                    <button class="filter-tab" data-filter="consulting">Consulting</button>
+                    <button class="filter-tab" data-filter="support">Support</button>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-category="cloud">
+                    <div class="service-card-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-badges">
+                            <span class="badge popular">Popular</span>
+                        </div>
+                        <h3>Cloud Infrastructure</h3>
+                        <p>Scalable cloud solutions to power your business. Migrate, optimize, and manage your cloud infrastructure with our expert team.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">From $99/mo</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="development">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-badges">
+                            <span class="badge recommended">Recommended</span>
+                        </div>
+                        <h3>Custom Development</h3>
+                        <p>Tailored software solutions built to your specifications. From web apps to mobile applications, we bring your vision to life.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Custom Pricing</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="consulting">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-badges">
+                            <span class="badge popular">Popular</span>
+                        </div>
+                        <h3>Tech Consulting</h3>
+                        <p>Strategic technology consulting to help you make informed decisions and optimize your technology investments.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">From $150/hr</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="cloud">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Data Management</h3>
+                        <p>Comprehensive data solutions including storage, analytics, and migration. Keep your data secure and accessible.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">From $79/mo</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="support">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <div class="service-badges">
+                           
+                        </div>
+                        <h3>24/7 Technical Support</h3>
+                        <p>Round-the-clock support from our expert team. Get help whenever you need it, day or night.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">From $49/mo</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="development">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #16a085, #138d75);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Mobile App Development</h3>
+                        <p>Native and cross-platform mobile applications for iOS and Android. Reach your customers wherever they are.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Custom Pricing</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="cloud">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #34495e, #2c3e50);">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Security Services</h3>
+                        <p>Enterprise-grade security solutions to protect your business from threats. Compliance, monitoring, and incident response.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">From $199/mo</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card" data-category="consulting">
+                    <div class="service-card-image" style="background: linear-gradient(135deg, #e91e63, #c2185b);">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Digital Transformation</h3>
+                        <p>End-to-end digital transformation services to modernize your business processes and technology stack.</p>
+                        <div class="service-card-footer">
+                            <div class="service-price">Custom Pricing</div>
+                            <a href="service-details.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Custom Solution?</h2>
+                <p>Let's discuss how we can help transform your business</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-comments"></i> Contact Us
+                    </a>
+                    <a href="contact.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-calendar"></i> Book a Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cube"></i>
+                        <span>TechProduct</span>
+                    </div>
+                    <p>Innovative tech solutions for modern businesses. Transform your workflow today.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Documentation</a></li>
+                        <li><a href="blog.html">Tutorials</a></li>
+                        <li><a href="blog.html">API Reference</a></li>
+                        <li><a href="blog.html">Community</a></li>
+                        <li><a href="blog.html">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, San Francisco, CA 94105</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@techproduct.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM PST</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechProduct. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
